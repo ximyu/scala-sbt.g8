@@ -10,7 +10,8 @@ object $name;format="Camel"$Build extends Build {
       name := "$name$",
       organization := "$organization$",
       version := "$version$",
-      scalaVersion := "$scala_version$"
+      scalaVersion := "$scala_version$",
+      resolvers += "Twitter Repo" at "http://artifactory.local.twitter.com/repo"
       // add other settings here
     )
   )
